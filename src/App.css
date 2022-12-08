@@ -29,3 +29,13 @@
   animation-name: leftToRight;
   animation-duration: 0.6s;
 }
+.shade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: animate;
+  animation-duration: 1s;
+}
+.shade:hover {
+  cursor: pointer;
+}
