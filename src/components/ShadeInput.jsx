@@ -6,7 +6,7 @@ const ShadeInput = ({ color, onInputChange }) => {
       <input
         type="text"
         className="shade-input"
-        onChange={(e) => onInputChange(e.target.value)}
+        onChange={(e) => onInputChange(e.target.value.toLowerCase())}
         value={color}
       />
     </div>
