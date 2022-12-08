@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Shade = ({ shade, onColorCopy }) => {
   const [copied, setCopied] = useState(false);
@@ -20,6 +21,7 @@ const Shade = ({ shade, onColorCopy }) => {
     onColorCopy();
   };
   return (
+    <CopyToClipboard text={shade.hexString()} onCopy={() => onCopy()}>
       <div className="shade" style={{ backgroundColor: shade.hexString() }}>
         {copied ? (
           <span className="copied">copied!</span>
@@ -27,6 +29,7 @@ const Shade = ({ shade, onColorCopy }) => {
           <span>{shade.hexString()}</span>
         )}
       </div>
+    </CopyToClipboard>
   );
 };
 
