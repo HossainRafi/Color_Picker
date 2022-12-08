@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 const Shade = ({ shade, onColorCopy }) => {
   const [copied, setCopied] = useState(false);
 
