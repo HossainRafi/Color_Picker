@@ -9,7 +9,7 @@ const Shade = ({ shade, onColorCopy }) => {
     if (copied == true) {
       interval = setInterval(() => {
         setCopied(false);
-      }, 1500);
+      }, 400);
     }
     return () => {
       clearInterval(interval);
@@ -24,7 +24,7 @@ const Shade = ({ shade, onColorCopy }) => {
     <CopyToClipboard text={shade.hexString()} onCopy={() => onCopy()}>
       <div className="shade" style={{ backgroundColor: shade.hexString() }}>
         {copied ? (
-          <span className="copied">copied!</span>
+          <span className="copied">copied</span>
         ) : (
           <span>{shade.hexString()}</span>
         )}

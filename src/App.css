@@ -43,3 +43,23 @@
   animation-name: copied;
   animation-duration: 0.3s;
 }
+
+@keyframes leftToRight {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes copied {
+  0% {
+    opacity: 0;
+    font-size: 0px;
+  }
+  100% {
+    opacity: 1;
+    opacity: 16px;
+  }
+}
