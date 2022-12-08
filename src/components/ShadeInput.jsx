@@ -5,8 +5,8 @@ const ShadeInput = () => {
     <div className="shade-search">
       <input
         type="text"
-              className="shade-input"
-              placeholder="Type color name"
+        className="shade-input"
+        placeholder="Type a color name here ....."
       />
     </div>
   );

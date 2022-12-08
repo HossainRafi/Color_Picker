@@ -2,7 +2,7 @@ import React from 'react'
 
 const Shades = () => {
   return (
-    <div>Shades</div>
+    <div className="shades">Shades</div>
   )
 }
 
