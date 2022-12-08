@@ -1,12 +1,13 @@
 import React from "react";
 
-const ShadeInput = () => {
+const ShadeInput = ({ color, onInputChange }) => {
   return (
     <div className="shade-search">
       <input
         type="text"
         className="shade-input"
-        placeholder="Type a color name here ....."
+        onChange={(e) => onInputChange(e.target.value)}
+        value={color}
       />
     </div>
   );
