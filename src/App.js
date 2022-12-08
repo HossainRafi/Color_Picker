@@ -1,9 +1,12 @@
 import "./App.css";
+import ShadeInput from "./components/ShadeInput";
+import Shades from "./components/Shades";
 
 function App() {
   return (
-    <div>
-      <div></div>
+    <div className="App">
+      <ShadeInput />
+      <Shades />
     </div>
   );
 }
