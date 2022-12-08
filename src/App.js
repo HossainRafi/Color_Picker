@@ -1,10 +1,15 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-import ShadeInput from "./components/ShadeInput";
 import Shades from "./components/Shades";
+import randomColor from "randomcolor";
+import ShadeInput from "./components/ShadeInput";
 
 function App() {
   const [color, setColor] = useState("#000");
+
+  useEffect(() => {
+    setColor(randomColor());
+  }, []);
 
   const onInputChange = (value) => {
     setColor(value);

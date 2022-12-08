@@ -16,7 +16,11 @@ const Shade = ({ shade, onColorCopy }) => {
   }, [copied]);
   return (
     <div className="shade" style={{ backgroundColor: shade.hexString() }}>
-      <span>{shade.hexString()}</span>
+      {copied ? (
+        <span className="copied">copied!</span>
+      ) : (
+        <span>{shade.hexString()}</span>
+      )}
     </div>
   );
 };
