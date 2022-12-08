@@ -23,6 +23,7 @@ const Shades = ({ color }) => {
   };
   return (
     <div className="shades">
+      <audio ref={audioRef} src={require("../assets/sound1.mp3")} />
       {shades.map((shade) => (
         <Shade shade={shade} onColorCopy={onColorCopy} />
       ))}
