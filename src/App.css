@@ -75,3 +75,13 @@
     padding: 1rem 2rem;
   }
 }
+
+@media screen and (max-width: 660px) {
+  .shades {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(100, 20%);
+  }
+  .shade-search {
+    padding: 1rem 1rem;
+  }
+}
