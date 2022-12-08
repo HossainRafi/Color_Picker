@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const ShadeInput = () => {
   return (
-    <div>ShadeInput</div>
-  )
-}
+    <div className="shade-search">
+      <input type="text" className="shade-input" />
+    </div>
+  );
+};
 
-export default ShadeInput
+export default ShadeInput;
