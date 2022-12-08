@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 const Shade = ({ shade, onColorCopy }) => {
   const [copied, setCopied] = useState(false);
 
@@ -13,14 +14,19 @@ const Shade = ({ shade, onColorCopy }) => {
       clearInterval(interval);
     };
   }, [copied]);
+
+  const onCopy = () => {
+    setCopied(true);
+    onColorCopy();
+  };
   return (
-    <div className="shade" style={{ backgroundColor: shade.hexString() }}>
-      {copied ? (
-        <span className="copied">copied!</span>
-      ) : (
-        <span>{shade.hexString()}</span>
-      )}
-    </div>
+      <div className="shade" style={{ backgroundColor: shade.hexString() }}>
+        {copied ? (
+          <span className="copied">copied!</span>
+        ) : (
+          <span>{shade.hexString()}</span>
+        )}
+      </div>
   );
 };
 
