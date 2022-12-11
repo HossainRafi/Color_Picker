@@ -1,4 +1,4 @@
-# Project Name: [Color Picker](https://colorpickereact.netlify.app)
+# Project Name: [ColorPicker](https://colorpickereact.netlify.app)
 
 ## Project Live Link: https://colorpickereact.netlify.app
 
