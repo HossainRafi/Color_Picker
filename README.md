@@ -1,11 +1,9 @@
-## Project Name: [ColorPicker](https://colorpickereact.netlify.app)
+# Project Name: [ColorPicker](https://colorpickereact.netlify.app)
 
-## Project Live Link: [ColorPicker](https://colorpickereact.netlify.app)
-
-### Technology Used:
-- HTML
-- CSS
+## Technologies:
 - React.js
+- JavaScript
+- CSS
 - randomcolor
 - react-copy-to-clipboard
 - values.js
